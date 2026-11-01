@@ -15,3 +15,7 @@ data/*.gz
 # Editor and OS caches
 .vscode/
 .DS_Store
+
+# Python bytecode
+__pycache__/
+*.pyc
