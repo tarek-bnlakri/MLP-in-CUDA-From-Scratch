@@ -23,7 +23,7 @@ for bin_name, (gz_name, offset) in FILES.items():
     print(f"  • Fetching {gz_name}...")
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
     with urllib.request.urlopen(req) as resp, gzip.GzipFile(fileobj=resp) as gz:
-        gz.read(offset) # Skip IDX header
+        gz.read(offset)
         raw_bytes = gz.read()
         with open(out_path, "wb") as f_out:
             f_out.write(raw_bytes)
