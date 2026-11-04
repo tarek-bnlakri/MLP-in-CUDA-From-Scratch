@@ -1,21 +1,13 @@
-# Build output directory and object files
 bin/
+models/*.bin
 *.o
 *.out
-
-# Raw MNIST datasets (downloaded separately)
 data/*.bin
 data/*.gz
-
-# Profiling outputs (Nsight Systems and Nsight Compute)
 *.nsys-rep
 *.sqlite
 *.ncu-rep
-
-# Editor and OS caches
 .vscode/
 .DS_Store
-
-# Python bytecode
 __pycache__/
 *.pyc
